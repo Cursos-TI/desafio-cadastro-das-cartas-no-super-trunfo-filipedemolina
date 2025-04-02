@@ -9,8 +9,8 @@ int main(){
     float densidade1, densidade2; //variáveis para amazenar a densidade populacional
     float pibper1, pibper2; //variáveis para amazenar o pib per capital
     float superpoder1, superpoder2; //variáveis para amazenar o super poder
+    //variáveis para amazenar quem venceu
     int populacaovencedora, areavencedora, pibvencedora,pontoturisticosvencedora,densidadevencedora,pibpervencedora,superpodervencedora;
-
     //solicitar o estado
     printf("Digite o estado entre (A-H).\n");
     scanf(" %s", &estado1);//amazenar o estado
@@ -91,8 +91,9 @@ int main(){
     //Mostrar os dados da primeira carta ao usuário
     printf("\nCarta 1\nEstado:%c\nCodigo:%s\nNome da cidade:%s\nPopulaçao:%d\nÁrea:%.2fkm²\nPIB:%.2f bilhões de reais\nPontos turisticos:%d\ndensidade populacional:%.2f hab/km²\nPIB per Capita%.2f reais\n\n",estado1, codigo1, cidade1, populacao1, area1, pib1, pontosturisticos,densidade1,pibper1);
     
-    //Mostar os dados da segunda carta ao usuário
+    //Mostrar os dados da segunda carta ao usuário
     printf("Carta 2\nEstado:%c\nCodigo:%s\nNome da cidade:%s\nPopulaçao:%d\nÁrea:%.2fkm²\nPIB:%.2f bilhões de reais\nPontos turisticos:%d\ndensidade populacional:%.2f hab/km²\n PIB per Capita:%.2f reais\n\n",estado2, codigo2, cidade2, populacao2, area2, pib2, pontosturisticos2,densidade2,pibper2);
+    //Mostrar quem venceu entre as as duas cartas
     printf("Comparação de Cartas: o valor 1 para primeira carta e o valor 0 para segunda carta\n\n");
     printf("População: %d\n", populacaovencedora);
     printf("Área: %d\n", areavencedora);
